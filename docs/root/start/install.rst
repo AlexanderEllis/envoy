@@ -110,6 +110,13 @@ The following commands will pull and show the Envoy version of current images.
          $ docker pull envoyproxy/|envoy_distroless_docker_image|
          $ docker run --rm envoyproxy/|envoy_distroless_docker_image| --version
 
+.. _install_contrib:
+
+Contrib images
+~~~~~~~~~~~~~~
+
+fixfix
+
 .. _install_binaries:
 
 Pre-built Envoy Docker images
@@ -140,6 +147,12 @@ The following table shows the available Docker images
      - |DOCKER_IMAGE_TAG_NAME|
      -
      -
+   * - `envoyproxy/envoy-contrib <https://hub.docker.com/r/envoyproxy/envoy-contrib/tags/>`_
+     - Release :ref:`contrib <install_contrib>` binary with symbols stripped on top of an Ubuntu Bionic base.
+     - |DOCKER_IMAGE_TAG_NAME|
+     - |DOCKER_IMAGE_TAG_NAME|
+     -
+     -
    * - `envoyproxy/envoy-distroless <https://hub.docker.com/r/envoyproxy/envoy-distroless/tags/>`_
      - Release binary with symbols stripped on top of a distroless base.
      - |DOCKER_IMAGE_TAG_NAME|
@@ -164,8 +177,20 @@ The following table shows the available Docker images
      - |DOCKER_IMAGE_TAG_NAME|
      -
      -
+   * - `envoyproxy/envoy-contrib-debug <https://hub.docker.com/r/envoyproxy/envoy-contrib-debug/tags/>`_
+     - Release :ref:`contrib <install_contrib>` binary with debug symbols on top of an Ubuntu Bionic base.
+     - |DOCKER_IMAGE_TAG_NAME|
+     - |DOCKER_IMAGE_TAG_NAME|
+     -
+     -
    * - `envoyproxy/envoy-dev <https://hub.docker.com/r/envoyproxy/envoy-dev/tags/>`_
      - Release binary with symbols stripped on top of an Ubuntu Bionic base.
+     -
+     -
+     - latest
+     - latest
+   * - `envoyproxy/envoy-contrib-dev <https://hub.docker.com/r/envoyproxy/envoy-contrib-dev/tags/>`_
+     - Release :ref:`contrib <install_contrib>` binary with symbols stripped on top of an Ubuntu Bionic base.
      -
      -
      - latest
@@ -184,6 +209,12 @@ The following table shows the available Docker images
      -
    * - `envoyproxy/envoy-debug-dev <https://hub.docker.com/r/envoyproxy/envoy-debug-dev/tags/>`_
      - Release binary with debug symbols on top of an Ubuntu Bionic base.
+     -
+     -
+     - latest
+     - latest
+   * - `envoyproxy/envoy-contrib-debug-dev <https://hub.docker.com/r/envoyproxy/envoy-contrib-debug-dev/tags/>`_
+     - Release :ref:`contrib <install_contrib>` binary with debug symbols on top of an Ubuntu Bionic base.
      -
      -
      - latest

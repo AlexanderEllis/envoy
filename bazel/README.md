@@ -667,7 +667,7 @@ The following optional features can be enabled on the Bazel build command-line:
 ## Enabling and disabling extensions
 
 Envoy uses a modular build which allows extensions to be removed if they are not needed or desired.
-Extensions that can be removed are contained in
+Extensions that can be removed are contained in fixfix
 [extensions_build_config.bzl](../source/extensions/extensions_build_config.bzl).
 
 The extensions disabled by default can be enabled by adding the following parameter to Bazel, for example to enable

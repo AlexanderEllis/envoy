@@ -66,8 +66,8 @@ We maintain a very specific code and namespace layout for extensions. This aids 
 code/extensions, and allows us specify extension owners in [CODEOWNERS](CODEOWNERS).
 
 
-* All extensions are either registered in [all_extensions.bzl](source/extensions/all_extensions.bzl)
-  or [extensions_build_config.bzl](source/extensions/extensions_build_config.bzl). The former is
+* All extensions are either registered in [all_extensions.bzl](all_extensions.bzl)
+  or [extensions_build_config.bzl](extensions_build_config.bzl). The former is fixfix
   for extensions that cannot be removed from the primary Envoy build. The latter is for extensions
   that can be removed on a site specific basis. See [bazel/README.md](bazel/README.md) for how to
   compile out extensions on a site specific basis. Note that by default extensions should be

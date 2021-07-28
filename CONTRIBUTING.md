@@ -258,8 +258,8 @@ API can be found [here](api/STYLE.md#adding-an-extension-configuration-to-the-ap
 
 Other changes will likely include
 
-  * Editing [source/extensions/extensions_build_config.bzl](source/extensions/extensions_build_config.bzl) to include the new extensions
-  * Editing [source/extensions/extensions_metadata.yaml](source/extensions/extensions_metadata.yaml) to include metadata for the new extensions
+  * Editing [extensions_build_config.bzl](extensions_build_config.bzl) to include the new extensions fixfix
+  * Editing [extensions_metadata.yaml](extensions_metadata.yaml) to include metadata for the new extensions fixfix
   * Editing [docs/root/api-v3/config/config.rst](docs/root/api-v3/config/config.rst) to add area/area
   * Adding `docs/root/api-v3/config/area/area.rst` to add a table of contents for the API docs
   * Adding `source/extensions/area/well_known_names.h` for registered plugins
