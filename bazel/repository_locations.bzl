@@ -800,6 +800,19 @@ REPOSITORY_LOCATIONS_SPEC = dict(
         release_date = "2020-10-08",
         cpe = "N/A",
     ),
+    com_github_open_telemetry_opentelemetry_cpp = dict(
+        project_name = "OpenTelemetry C++",
+        project_desc = "OpenTelemetry C++ tracing library",
+        project_url = "https://github.com/open-telemetry/opentelemetry-cpp",
+        version = "1.0.0",
+        sha256 = "c67f04c901774bc5d92b22b95b88e3445de5d71733a3a97bd187371a49248292",
+        strip_prefix = "opentelemetry-cpp-{version}",
+        urls = ["https://github.com/open-telemetry/opentelemetry-cpp/archive/v{version}.tar.gz"],
+        use_category = ["observability_ext"],
+        extensions = ["envoy.tracers.opentelemetry"],
+        release_date = "2021-09-19",
+        cpe = "N/A",
+    ),
     # This should be removed, see https://github.com/envoyproxy/envoy/issues/11816.
     com_github_curl = dict(
         project_name = "curl",

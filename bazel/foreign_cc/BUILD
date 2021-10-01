@@ -442,3 +442,19 @@ envoy_cmake(
         "//conditions:default": ["libz.a"],
     }),
 )
+
+envoy_cmake(
+    name = "io_opentelemetry_cpp_build",
+    cache_entries = {},
+    lib_source = "@com_github_open_telemetry_opentelemetry_cpp//:all",
+    tags = ["skip_on_windows"],
+    deps = [":llvm"],
+)
+
+cc_library(
+    name = "io_opentelemetry_cpp",
+    tags = ["skip_on_windows"],
+    deps = [
+        "io_opentelemetry_cpp_build",
+    ],
+)

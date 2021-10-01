@@ -213,6 +213,7 @@ def envoy_dependencies(skip_targets = []):
     _com_googlesource_googleurl()
     _com_lightstep_tracer_cpp()
     _io_opentracing_cpp()
+    _io_opentelemetry_cpp()
     _net_zlib()
     _com_github_zlib_ng_zlib_ng()
     _org_brotli()
@@ -501,6 +502,16 @@ def _io_opentracing_cpp():
     native.bind(
         name = "opentracing",
         actual = "@io_opentracing_cpp//:opentracing",
+    )
+
+def _io_opentelemetry_cpp():
+    external_http_archive(
+        name = "com_github_open_telemetry_opentelemetry_cpp",
+        build_file_content = BUILD_ALL_CONTENT,
+    )
+    native.bind(
+        name = "opentelemetry_cpp",
+        actual = "@envoy//bazel/foreign_cc:io_opentelemetry_cpp",
     )
 
 def _com_lightstep_tracer_cpp():
