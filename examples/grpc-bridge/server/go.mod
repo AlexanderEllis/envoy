@@ -3,10 +3,9 @@ module github.com/envoyproxy/envoy
 go 1.13
 
 require (
-	github.com/envoyproxy/envoy/examples/grpc-bridge/server/kv v0.0.0-00010101000000-000000000000
-	golang.org/x/net v0.8.0
-	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4 // indirect
-	google.golang.org/grpc v1.53.0
+	github.com/envoyproxy/envoy/examples/grpc-bridge/server v0.0.0-20240408192629-0811e148703a
+	golang.org/x/net v0.24.0
+	google.golang.org/grpc v1.63.2
 )
 
 replace github.com/envoyproxy/envoy/examples/grpc-bridge/server/kv => ./kv
