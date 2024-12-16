@@ -774,10 +774,6 @@ imagesize==1.4.1 \
     --hash=sha256:0d8d18d08f840c19d0ee7ca1fd82490fdc3729b7ac93f49870406ddde8ef8d8b \
     --hash=sha256:69150444affb9cb0d5cc5a92b3676f0b2fb7cd9ae39e947a5e11a36b4497cd4a
     # via sphinx
-importlib-metadata==6.6.0 \
-    --hash=sha256:43dd286a2cd8995d5eaef7fee2066340423b818ed3fd70adf0bad5f1fac53fed \
-    --hash=sha256:92501cdf9cc66ebd3e612f1b4f0c0765dfa42f0fa38ffb319b6bd84dd675d705
-    # via yapf
 jinja2==3.1.2 \
     --hash=sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852 \
     --hash=sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61
@@ -1230,7 +1226,7 @@ sphinxcontrib-httpdomain==1.8.1 \
     --hash=sha256:21eefe1270e4d9de8d717cc89ee92cc4871b8736774393bafc5e38a6bb77b1d5 \
     --hash=sha256:6c2dfe6ca282d75f66df333869bb0ce7331c01b475db6809ff9d107b7cdfe04b
     # via envoy-docs-sphinx-runner
-sphinxcontrib.jquery @ https://github.com/sphinx-contrib/jquery/archive/refs/tags/v3.0.0.zip \
+sphinxcontrib-jquery @ https://github.com/sphinx-contrib/jquery/archive/refs/tags/v3.0.0.zip \
     --hash=sha256:562ad9ac0ac3d8f04a363eb3507ae4b2b856aa04aabab6df7543530fafb849ca
     # via
     #   -r requirements.in
@@ -1256,10 +1252,6 @@ sphinxext-rediraffe==0.2.7 \
 thrift==0.16.0 \
     --hash=sha256:2b5b6488fcded21f9d312aa23c9ff6a0195d0f6ae26ddbd5ad9e3e25dfc14408
     # via -r requirements.in
-tomli==2.0.1 \
-    --hash=sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc \
-    --hash=sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f
-    # via yapf
 trycast==1.0.0 \
     --hash=sha256:72dd9be7553337cfba04809646dc144ddd6e3a54f4213ab8b76a14b4a1882e04 \
     --hash=sha256:93fcbb922ef3a22c587f636ed8c128266bb2615171983dbf2f7edd3ae86afb10
@@ -1403,9 +1395,9 @@ yamllint==1.32.0 \
     --hash=sha256:d01dde008c65de5b235188ab3110bebc59d18e5c65fc8a58267cd211cd9df34a \
     --hash=sha256:d97a66e48da820829d96077d76b8dfbe6c6140f106e558dae87e81ac4e6b30b7
     # via envoy-code-check
-yapf==0.40.0 \
-    --hash=sha256:63386557876c2686cb29d8c422b2d1e484f29f7a278821f91515b5c5adf569a7 \
-    --hash=sha256:7eeb8c404e386f16e24cbd785103dbc573f51cbb68e65a35f4392e0233f3d7bc
+yapf==0.43.0 \
+    --hash=sha256:00d3aa24bfedff9420b2e0d5d9f5ab6d9d4268e72afbf59bb3fa542781d5218e \
+    --hash=sha256:224faffbc39c428cb095818cf6ef5511fdab6f7430a10783fdfb292ccf2852ca
     # via
     #   -r requirements.in
     #   envoy-code-check
@@ -1487,10 +1479,6 @@ yarl==1.9.2 \
     # via
     #   -r requirements.in
     #   aiohttp
-zipp==3.15.0 \
-    --hash=sha256:112929ad649da941c23de50f356a2b5570c954b65150642bccdd66bf194d224b \
-    --hash=sha256:48904fc76a60e542af151aded95726c1a5c34ed43ab4134b597665c86d7ad556
-    # via importlib-metadata
 zstandard==0.21.0 \
     --hash=sha256:0aad6090ac164a9d237d096c8af241b8dcd015524ac6dbec1330092dba151657 \
     --hash=sha256:0bdbe350691dec3078b187b8304e6a9c4d9db3eb2d50ab5b1d748533e746d099 \
